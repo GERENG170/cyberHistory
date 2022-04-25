@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans&family=Playfair+Display&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans&family=Playfair+Display&family=Press+Start+2P&family=Viga&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  height: 100%;
+  background: url("/img/1259258 (1).webp") 0 0/auto auto no-repeat;
+}
+body .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.93);
+}
+body .wrapper .header .conteiner {
+  background: black;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  padding: 0 80px 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #b7b7b7;
+}
+body .wrapper .header .conteiner .menu_title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-left: 40px;
+}
+body .wrapper .header .conteiner .menu_title p {
+  margin: 2.1% 0 2.2% 0;
+  font-size: 25px;
+  color: white;
+  font-family: "Bungee", cursive;
+}
+body .wrapper .header .conteiner .menu_head {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body .wrapper .header .conteiner .menu_head li {
+  margin: 15px 0 15px 0;
+}
+body .wrapper .header .conteiner .menu_head li a {
+  font-family: "Bungee", cursive;
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+}
+body .wrapper .main {
+  margin: 50px 0 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .wrapper .main .messenger {
+  position: fixed;
+  padding-top: 1.2%;
+  width: 6%;
+  height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 6%;
+          flex: 0 1 6%;
+  border-right: 1px solid #b7b7b7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .wrapper .main .messenger div {
+  width: 40px;
+  height: 40px;
+  margin-top: 100px;
+  border-radius: 50%;
+  background: #b7b7b7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+body .wrapper .main .messenger div p {
+  color: white;
+  font-family: "Bungee", cursive;
+  font-size: 20px;
+}
+body .wrapper .main .messenger .back_to_top {
+  background: #ffffff;
+  font-size: 20px;
+  font-family: "Bungee", cursive;
+  display: none;
+  cursor: default;
+}
+body .wrapper .main .conteiner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 90%;
+          flex: 1 1 90%;
+  padding-left: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .wrapper .main .conteiner .mainFirst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper .main .conteiner .mainFirst .txtBlockOne {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper .main .conteiner .mainFirst .txtBlockOne p {
+  margin: 10% 0 10% 0;
+  min-width: 100%;
+  border-bottom: 5px solid #E52652;
+  padding-bottom: 5px;
+  font-family: "Bungee", cursive;
+  font-size: 15px;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: default;
+}
+body .wrapper .main .conteiner .mainFirst .blockOne {
+  margin: 50px 50px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("/img/item2.jpg") 0 0/100% 100% no-repeat fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 0 5px #ffffff;
+          box-shadow: 0 0 5px #ffffff;
+}
+body .wrapper .main .conteiner .mainFirst .blockOne .titleOne {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Bungee", cursive;
+}
+body .wrapper .main .conteiner .mainFirst .blockOne .titleOne p {
+  font-size: 50px;
+}
+body .wrapper .main .conteiner .mainFirst .blockOne .btnOne {
+  padding-top: 5%;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  opacity: 0;
+}
+body .wrapper .main .conteiner .mainFirst .blockOne .btnOne button {
+  color: white;
+  text-transform: uppercase;
+  background: rgba(229, 38, 82, 0);
+  border: 3px solid #E52652;
+  font-family: "Bungee", cursive;
+  -webkit-transition-property: background-image;
+  transition-property: background-image;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  font-size: 25px;
+  padding: 10px 60px 10px 60px;
+}
+body .wrapper .main .conteiner .mainMidle {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  border-top: 1px solid #979797;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .wrapper .main .conteiner .mainMidle .blockTwo {
+  margin: 50px 0px 50px 50px;
+  min-height: 500px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  background: url("/img/cyberpunk-dark-city-night.jpg") 0 0/100% 100% no-repeat fixed;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 0 5px #ffffff;
+          box-shadow: 0 0 5px #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper .main .conteiner .mainMidle .blockTwo .titleTwo {
+  color: white;
+  font-family: "Bungee", cursive;
+}
+body .wrapper .main .conteiner .mainMidle .blockTwo .titleTwo p {
+  font-size: 50px;
+}
+body .wrapper .main .conteiner .mainMidle .blockTwo .btnTwo {
+  opacity: 0;
+  padding-top: 5%;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+body .wrapper .main .conteiner .mainMidle .blockTwo .btnTwo button {
+  color: white;
+  text-transform: uppercase;
+  background: rgba(229, 38, 82, 0);
+  border: 3px solid #E52652;
+  font-family: "Bungee", cursive;
+  -webkit-transition-property: background-image;
+  transition-property: background-image;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-size: 25px;
+  padding: 10px 60px 10px 60px;
+}
+body .wrapper .main .conteiner .mainMidle .txtBlockOne {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper .main .conteiner .mainMidle .txtBlockOne p {
+  padding-left: 5%;
+  margin: 10% 0 10% 0;
+  width: 100%;
+  border-bottom: 5px solid #E52652;
+  padding-bottom: 5px;
+  font-family: "Bungee", cursive;
+  font-size: 15px;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: default;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+}
+body .wrapper .main .conteiner .mainR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+body .wrapper .main .conteiner .mainR .txtBlockOne {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper .main .conteiner .mainR .txtBlockOne p {
+  margin: 10% 0 10% 0;
+  width: 100%;
+  border-bottom: 5px solid #E52652;
+  padding-bottom: 5px;
+  font-family: "Bungee", cursive;
+  font-size: 15px;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: default;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+}
+body .wrapper .main .conteiner .mainR .blockThree {
+  margin: 50px 50px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 0 5px #ffffff;
+          box-shadow: 0 0 5px #ffffff;
+  background: url("/img/item3.jpg") 0px 0px/100% auto no-repeat fixed;
+}
+body .wrapper .main .conteiner .mainR .blockThree .titleGames p {
+  font-family: "Bungee", cursive;
+  font-size: 50px;
+  color: white;
+}
+body .wrapper .main .conteiner .mainR .blockThree .btnGames {
+  opacity: 0;
+  margin-top: 5%;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+body .wrapper .main .conteiner .mainR .blockThree .btnGames button {
+  color: white;
+  text-transform: uppercase;
+  background: rgba(229, 38, 82, 0);
+  border: 3px solid #E52652;
+  font-family: "Bungee", cursive;
+  -webkit-transition-property: background-image;
+  transition-property: background-image;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-size: 25px;
+  padding: 10px 60px 10px 60px;
+}
+body .wrapper footer .conteiner {
+  padding: 0 200px 0 200px;
+}
+body .wrapper footer .conteiner .menu_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .wrapper footer .conteiner .menu_footer li {
+  margin: 20px 0 20px 0;
+}
+body .wrapper footer .conteiner .menu_footer li a {
+  font-family: "Bungee", cursive;
+  text-decoration: none;
+  color: white;
+}

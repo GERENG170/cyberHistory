@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans&family=Playfair+Display&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans&family=Playfair+Display&family=Press+Start+2P&family=Viga&display=swap');
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body{
+    height: 100%;
+    background: url("/img/1259258\ \(1\).webp") 0 0/auto auto no-repeat;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, 0.93);
+        .header{
+            .conteiner{
+                background: black;
+                z-index: 99;
+                // overflow: hidden;
+                position: fixed;
+                width: 100%;
+                padding: 0 80px 0 80px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-bottom: 1px solid #b7b7b7;
+                .menu_title{
+                    flex: 0 1 50%;
+                    padding-left: 40px;
+                    // border-left: 1px solid #b7b7b7;
+                    p{
+                        margin: 2.1% 0 2.2% 0;
+                        font-size: 25px;
+                        color: white;
+                        font-family: 'Bungee', cursive;
+                    }
+                }
+                .menu_head{
+                    flex: 0 1 50%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                   
+                    li{
+                        margin: 15px 0 15px 0;
+                        a{
+                            font-family: 'Bungee', cursive;
+                            font-size: 13px;
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .main{
+            margin: 50px 0 0 0;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
+            .messenger{
+                position: fixed;
+                padding-top: 1.2%;
+                width: 6%;
+                height: 100%;
+                flex: 0 1 6%;
+                border-right: 1px solid #b7b7b7;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 100px;
+                    border-radius: 50%;
+                    background: #b7b7b7;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    transition-property: background-color;
+                    transition-property: box-shadow;
+                    transition-duration: 0.5s;
+                    p{
+                        color: white;
+                        font-family: 'Bungee', cursive;
+                        font-size: 20px;
+                    }
+                }
+                .back_to_top{
+                    background: #ffffff;
+                    font-size: 20px;
+                    font-family: 'Bungee', cursive;
+                    display: none;
+                    cursor: default;
+                }
+                
+                
+            }
+            .conteiner{
+                flex: 1 1 90%;
+                padding-left: 6%;
+                display: flex;
+                flex-direction: column;
+                .mainFirst{
+                    display: flex;
+                    flex-direction: row;
+                    flex: 0 1 33.333%;
+                    justify-content: center;
+                    .txtBlockOne{
+                        // padding-top: 5%;
+                        flex:0 1 40%;
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-left: 5%;
+                        justify-content: center;
+                        p{
+                            margin: 10% 0 10% 0 ;
+                            min-width: 100%;
+                            border-bottom: 5px solid #E52652;
+                            padding-bottom: 5px;
+                            font-family: 'Bungee', cursive;
+                            font-size: 15px;
+                            transition-property: font-size;
+                            transition-property: border-bottom;
+                            transition-duration: 0.2s;
+                            cursor: default;
+                        }
+                    }
+                    .blockOne{
+                        margin: 50px 50px 50px 0px;
+                        display: flex;
+                        min-height: 500px;
+                        flex: 0 1 60%;
+                        // flex: 0 1 100%;
+                        flex-direction: column;
+                        background: url("/img/item2.jpg")0 0/100% 100% no-repeat fixed;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #ffffff;
+                        box-shadow: 0 0 5px #ffffff;
+                    
+                       
+                        .titleOne{
+                            
+                            color: white;
+                            justify-content: center;
+                            font-family: 'Bungee', cursive;
+                            p{
+                                font-size: 50px;
+                            }
+                        }
+                            .btnOne{
+                                padding-top: 5%;
+                                transition-property: opacity;
+                                transition-duration: 1s;
+                                opacity: 0;
+                                button{
+                                    color: white;
+                                    text-transform: uppercase;
+                                    background:rgb(229, 38, 82,0.0);
+                                    border: 3px solid #E52652;
+                                    font-family: 'Bungee', cursive;
+                                    transition-property: background-image;
+                                    transition-property: box-shadow;
+                                    transition-duration: 5s;
+                                    font-size: 25px;
+                                    padding: 10px 60px 10px 60px;
+                                }
+                            }
+                    }
+                }
+                .mainMidle{
+                    flex: 0 1 33.333%;
+                    border-top: 1px solid rgb(151, 151, 151);
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .blockTwo{
+                        margin: 50px 0px 50px 50px;
+                        min-height: 500px;
+                        flex: 0 1 60%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 30px;
+                        background: url("/img/cyberpunk-dark-city-night.jpg")0 0/100% 100% no-repeat fixed;
+                        border: 1px solid #ffffff;
+                        box-shadow: 0 0 5px #ffffff;
+                        align-items: center;
+                        justify-content: center;
+                        .titleTwo{
+                            color: white;
+                            font-family: 'Bungee', cursive;
+                            p{
+                                font-size: 50px;
+                            }
+                        }
+                        .btnTwo{
+                            opacity: 0;
+                            padding-top: 5%;
+                            transition-property: opacity;
+                            transition-duration: 1s;
+                            button{
+                                color: white;
+                                text-transform: uppercase;
+                                background:rgb(229, 38, 82,0.0);
+                                border: 3px solid #E52652;
+                                font-family: 'Bungee', cursive;
+                                transition-property: background-image;
+                                transition-property: box-shadow;
+                                transition-duration: 0.5s;
+                                font-size: 25px;
+                                padding: 10px 60px 10px 60px;
+                            }
+                        }
+                    }
+                    .txtBlockOne{
+                        // padding-top: 5%;
+                        flex:0 1 40%;
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-right: 5%;
+                        justify-content: center;
+                        p{
+                            padding-left: 5%;
+                            margin: 10% 0 10% 0 ;
+                            width: 100%;
+                            border-bottom: 5px solid #E52652;
+                            padding-bottom: 5px;
+                            font-family: 'Bungee', cursive;
+                            font-size: 15px;
+                            transition-property: border-bottom;
+                            transition-duration: 0.2s;
+                            cursor: default;
+                            transition-property: font-size;
+                        }
+                    }
+                }
+                .mainR{
+                    display: flex;
+                    flex-direction: row;
+                    flex: 0 1 33.333%;
+                    .txtBlockOne{
+                        // padding-top: 5%;
+                        flex:0 1 40%;
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-left: 5%;
+                        justify-content: center;
+                        p{
+                            margin: 10% 0 10% 0 ;
+                            width: 100%;
+                            border-bottom: 5px solid #E52652;
+                            padding-bottom: 5px;
+                            font-family: 'Bungee', cursive;
+                            font-size: 15px;
+                            transition-property: border-bottom;
+                            transition-duration: 0.2s;
+                            cursor: default;
+                            transition-property: font-size;
+                        }
+                    }
+                    .blockThree{
+                        margin: 50px 50px 50px 0px;
+                        display: flex;
+                        width: 100%;
+                        min-height: 500px;
+                        flex: 0 1 60%;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #ffffff;
+                        box-shadow: 0 0 5px #ffffff;
+                        background: url("/img/item3.jpg") 0px 0px/100% auto no-repeat fixed;
+                        .titleGames{
+                            p{
+                                font-family: 'Bungee', cursive;
+                                font-size: 50px;
+                                color: white;
+                                
+                            }
+                        }
+                        
+                        .btnGames{
+                            opacity: 0;
+                            margin-top: 5%;
+                            transition-property: opacity;
+                            transition-duration: 1s;
+                            button{
+                                color: white;
+                                text-transform: uppercase;
+                                background:rgb(229, 38, 82,0.0);
+                                border: 3px solid #E52652;
+                                font-family: 'Bungee', cursive;
+                                transition-property: background-image;
+                                transition-property: box-shadow;
+                                transition-duration: 0.5s;
+                                font-size: 25px;
+                                padding: 10px 60px 10px 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .conteiner{
+                padding: 0 200px 0 200px;
+                .menu_footer{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        margin: 20px 0 20px 0;
+                        a{
+                            
+                            font-family: 'Bungee', cursive;
+                            text-decoration: none;
+                            color: rgb(255, 255, 255);  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
